@@ -1,0 +1,331 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Site Core Colors + Style*/
+:root {
+    --primary: rgb(131,173,181);
+    --secondary:rgb(199,187,201);
+    --tertiary: rgb(94,60,88);
+    --dark: rgb(46,64,69);
+    --light: rgb(191,181,178);
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family:'Montserrat', sans-serif;
+    color: var(--primary);
+    background-color: var(--dark);
+    line-height: 2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+/* Header  */
+header {
+    padding: 15px 6% 15px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: var(--dark);
+    box-shadow: 0 5px 35px rgb(0, 0, 0);
+}
+
+header h1 {
+    color: var(--primary);
+    background-color: var(--dark);
+    padding: 5px 1% 5px 5%;
+    margin: 0;
+    font-size: 3vw;
+    line-height: 1;
+}
+
+header a:hover {
+    color: var(--light);
+}
+
+/* Navigational  */
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 5px 10px;
+    color: var(--primary);
+    margin-right: 10px;
+    background-image: linear-gradient(270deg, var(--tertiary) 0%, var(--primary) 100%);
+    background-repeat: no-repeat;
+    background-size: 0% 0.2em;
+    background-position: right;
+    transition: all 0.2s ease-in;
+    font-size: 1.6rem;
+}
+
+nav a:hover {
+    background-size: 100% 100%;
+    color: var(--light);
+}
+
+nav a:last-child {
+    margin-right: 0;
+}
+
+main {
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.light {
+    color: var(--light);
+}
+
+/* Hero Content */
+.hero {
+    background: rgb(0, 0, 0);
+    background-image: url("./images/code.jpg") ;
+    background-size: auto;
+    background-position: center;
+    min-height: 50vh;
+    color: var(--light);
+    padding: 1% 6%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: left;
+    padding-left: 0;
+}
+
+.hero img {
+    width: 350px;
+    height: 350px;
+    margin: 30px;
+    border-radius: 0%;
+    opacity: 0.9;
+    float: right;
+    background-image: url("./images/Cyres.jfif");
+    
+}
+
+.hero img:hover{
+    opacity: 1;
+}
+
+.hero div {
+    flex: 0 0 90%;
+}
+
+.hero h2 {
+    background-color: var(--dark);
+    color: var(--primary);
+    margin: 0;
+    padding: 5px 10px;
+    font-size: 3.2rem;
+    line-height: 1.2;
+    display: inline;
+}
+
+/* Main  Content */
+
+.page-wrapper {
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-section {
+    margin: 20px 0;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.page-section > h2 {
+    flex: 0 0 20%;
+    text-align: center;
+    padding-right: 15px;
+    border-right: 4px solid var(--primary);
+    font-size: 3.2rem;
+    line-height: 1.1;
+}
+
+.page-section > div {
+    flex: 0 0 75%;
+}
+
+.page-section p {
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+    font-size:larger ;
+}
+
+/* Grid Portfolio Structure */
+.grid-container {
+    display: grid;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(150px, 1fr);
+}
+
+.grid-item {
+    border: 7px solid var(--primary);
+    grid-column: span 4;
+    background-color: var(--primary);
+    color: var(--dark);
+    min-height: 100px;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 20px 0;
+    text-decoration: none;
+    background-blend-mode:hard-light;
+    background-size: 150%;
+    transition: all 0.8s;
+    font-size: 0.8rem;
+}
+
+/* Grid Portfolio - Feature First Child */
+.grid-item:first-child {
+    grid-column: span 8;
+    grid-row: span 2;
+}
+
+.grid-item:hover {
+    background-color: rgba(0, 0, 0, 0.473);
+}
+
+.grid-item div {
+    background-color: var(--primary);
+    padding: 8px 10px;
+}
+
+.grid-item h3 {
+    font-size: 1.4rem;
+}
+
+/* Images*/
+.runbuddy {
+    background-image: url("./images/Run-Buddy.PNG");
+}
+
+.horiseon {
+    background-image: url("./images/Horiseon.PNG");
+}
+
+.navmenu {
+    background-image: url("./images/Place\ holder\ image.jpeg");
+}
+
+/* Contact Section */
+.contact address {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.contact address a {
+    color: var(--primary);
+    padding: 5px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-style: normal;
+    background-image: linear-gradient(270deg, var(--primary) 10%, var(--dark) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: top;
+    transition: all 0.25s ease-in;
+    margin: 0 0.2rem 0.1rem;
+    display: inline-block;
+}
+
+.contact address a:hover {
+    background-size: 100% 88%;
+    color: var(--light);
+}
+
+/* Footer section */
+footer  {
+    font-size: 1.0em;
+    text-align: center;
+    vertical-align: bottom;
+  }
+
+  /* MEDIA QUERIES*/
+
+/* Max Width 980px*/
+
+@media screen and (max-width: 980px) {
+    header {
+        padding: 0 0 10px 0;
+        justify-content: center;
+        text-align: center;
+    }
+
+    header h1 {
+        width: 100%;
+        padding: 0px;
+        margin-bottom: 10px;
+        font-size: 10vw;
+    }
+
+    header nav {
+        justify-content: center;
+    }
+
+    .page-section > h2,
+    .page-section > div {
+        flex: 0 0 100%;
+    }
+
+    .page-section > h2 {
+        border-right: none;
+        border-bottom: 4px solid var(--primary);
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        text-align: left;
+        font-size: 7vw;
+    }
+
+    .hero {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        padding-left: 50px;
+    }
+}
+
+/* Max Width 768px*/
+@media screen and (max-width: 768px) {
+    .grid-item,
+    .grid-item:first-child {
+        grid-column: 1 / -1;
+    }
+
+    .grid-container {
+        grid-auto-rows: minmax(200px, 1fr);
+    }
+
+    .contact address {
+        flex-direction: column;
+        align-items: center;
+    }
+}
