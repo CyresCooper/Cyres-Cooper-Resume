@@ -202,7 +202,7 @@ main {
     padding: 0 0 120px 0;
     text-decoration: none;
     background-blend-mode:hard-light;
-    background-size: 130%;
+    background-size: cover;
     transition: all 0.9s;
     font-size: 0.8rem;
 }
@@ -257,7 +257,7 @@ main {
     background-image: linear-gradient(270deg, var(--primary) 10%, var(--dark) 100%);
     background-repeat: no-repeat;
     background-size: 100% 0.2em;
-    background-position: top;
+    background-position:top ;
     transition: all 0.25s ease-in;
     margin: 0 0.2rem 0.1rem;
     display: inline-block;
@@ -272,7 +272,7 @@ main {
 footer  {
     font-size: 1.0em;
     text-align: center;
-    vertical-align: bottom;
+    vertical-align: text-top;
   }
 
   /* MEDIA QUERIES*/
