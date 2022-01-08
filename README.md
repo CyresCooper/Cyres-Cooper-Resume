@@ -20,4 +20,5 @@
 * GitHub repository contains application code.
 # Description 
 This contains a portfoilo that allows me to keep updating my work section as I complete more projects. This portfolio was made using the base as HTML and then using the skills gained from the advnaced CSS module
-# https://cyrescooper.github.io/Cyres-Cooper-Resume/
+# 
+* [Link to Protfoilo](https://cyrescooper.github.io/Cyres-Cooper-Resume/)
