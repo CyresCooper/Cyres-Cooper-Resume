@@ -166,7 +166,7 @@ main {
     text-align: center;
     padding-right: 15px;
     border-right: 4px solid var(--primary);
-    font-size: 3.2rem;
+    font-size: 2rem;
     line-height: 1.1;
 }
 
@@ -231,17 +231,20 @@ main {
 }
 
 /* Images*/
-.runbuddy {
+.Gosee {
     background-image: url("./images/Cars.PNG");
+    background-size: cover;
 
 }
 
 .horiseon {
-    background-image: url("./images/Horiseon.PNG");
+    background-image: url("./images/GameCom.PNG");
+    background-size: cover;
 }
 
 .navmenu {
     background-image: url("./images/taskinator.PNG");
+    background-size: cover;
 }
 
 /* Contact Section */
@@ -346,7 +349,7 @@ footer  {
     }
 
     .contact address {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         overflow: visible;
         
